@@ -1,11 +1,14 @@
+:root
+{
+    --main-blue: #0065fc;
+}
 *
 {
     margin: 0px;
     padding: 0px;
     box-sizing: content-box;
 }
-/* git */
-a
+#nav-bar  a
 {
     list-style: none;
     text-decoration: none;
@@ -13,5 +16,13 @@ a
 }
 a:hover
 {
-    color:#0065fc
+    color:var(--main-blue, pink);
+}
+#inscription
+{
+    color:var(--main-blue);
+}
+#accomodation
+{
+
 }
