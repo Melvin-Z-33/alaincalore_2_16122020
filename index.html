@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a79dbf0876.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
-    <header>
+    <header id="header-nav">
         <nav>
-            <div id="nav-logo">
+            <!-- <div id="nav-logo">
                 <img src="img/logo/Reservia.svg" />
-            </div>
+            </div> -->
             <div id="nav-bar">
                <ul>
-                   <li id="inscription"><a href="#">S'inscrire</a></li>
-                   <li id="accomodation" ><a href="#">Hébergements</a></li>
-                   <li><a href="#">Activités</a></li>
+                   <li><img src="img/logo/Reservia.svg" /></li>
+                   <li><a id="inscription" href="#">S'inscrire</a></li>
+                   <li><a id="accomodation" href="#">Hébergements</a></li>
+                   <li ><a  id="activity"href="#">Activités</a></li>
                </ul>
             </div>
         </nav>
+        <hr noshade>
         <div id="header-text">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
     </header>
+    <div id="search-box">
+        <span id="map-point"><i class="fas fa-map-marker-alt"></i></span>
+        <input id="search-text" type="text" name="" placeholder="Marseille, France">
+        <input type="submit"id="btn-search-text" value="Rechercher">
+        <a  id="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+
+
 </body>
 </html>
