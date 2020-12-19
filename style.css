@@ -4,7 +4,7 @@
 {
     --main-blue: #0065fc;
     --main-blue-light:#DEEBFF;
-    --main-grey:#F2F2F2.
+    --main-grey:#F2F2F2;
     --padding-mobile: 10px 10px;
     --padding-mobile-nav: 10px;
     --padding-left-mobile-section: 0.5rem;
@@ -216,4 +216,22 @@ hr{
 {
     padding-left:20px;
     word-spacing:3px;
+}
+/* most-popular-section */
+#most-popular
+{
+    margin-top:50px;
+    background-color: var(--main-grey);
+    padding-left:var(--padding-left-mobile-section);
+}
+#popular-header
+{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 10px 20px 10px;
+    
+}
+
+{
+
 }
