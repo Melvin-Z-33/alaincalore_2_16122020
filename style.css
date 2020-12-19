@@ -229,9 +229,43 @@ hr{
     display:flex;
     justify-content: space-between;
     padding: 30px 10px 20px 10px;
+}
+.popular-image
+{
+    margin-bottom:20px;
+    padding: 10px;
+    display:flex;
+    background-color: red;
+    width:95%;
+    height: 130px;
+    border-radius: 12px;  
+}
+.popular-image img
+{
+    margin-right:25px;
+    width:30%;
+    height:auto;
+    border-radius:12px 0 0 12px;
+}
+figure h3
+{
+    margin-bottom: 10px;
+}
+figure p
+{
+    margin-bottom:30px;
+}
+.euro
+{
+    font-weight:bold;
     
 }
-
+.popular-star-activated
 {
-
+    color: var(--main-blue);
 }
+.popular-star-disabled
+{
+    color: var(--main-grey)
+}
+    
