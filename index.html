@@ -1,42 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a79dbf0876.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a79dbf0876.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Reservia</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header-nav">
-        <nav>
-            <!-- <div id="nav-logo">
-                <img src="img/logo/Reservia.svg" />
-            </div> -->
-            <div id="nav-bar">
-               <ul>
-                   <li><img src="img/logo/Reservia.svg" /></li>
-                   <li><a id="inscription" href="#">S'inscrire</a></li>
-                   <li><a id="accomodation" href="#">Hébergements</a></li>
-                   <li ><a  id="activity"href="#">Activités</a></li>
-               </ul>
-            </div>
-        </nav>
-        <hr noshade>
-        <div id="header-text">
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre ville ou en pleine nature</p>
+      <nav>
+        <div id="nav-bar">
+          <ul id="nav-list">
+            <li><img src="img/logo/Reservia.svg" /></li>
+            <li><a id="inscription" href="#">S'inscrire</a></li>
+            <li><a id="accomodation" href="#">Hébergements</a></li>
+            <li><a id="activity" href="#">Activités</a></li>
+          </ul>
         </div>
+      </nav>
+      <hr noshade /> 
+      <div id="header-text">
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
     </header>
     <div id="search-box">
         <span id="map-point"><i class="fas fa-map-marker-alt"></i></span>
-        <input id="search-text" type="text" name="" placeholder="Marseille, France">
-        <input type="submit"id="btn-search-text" value="Rechercher">
-        <a  id="search-btn" href="#">
-            <i class="fas fa-search"></i>
-        </a>
+        <input
+        id="search-text"
+        type="text"
+        name=""
+        placeholder="Marseille, France"
+        />
+        <input type="submit" id="btn-search-text" value="Rechercher" />
+        <button id="search-btn" href="#">
+        <i class="fas fa-search"></i>
+    </button>
+     </div>
+     <section id="filter">
+      <h3>Filtres</h3>
+      <ul id="filter-list">
+        <li>
+          <span class="filter-icone"
+            ><i class="fas fa-money-bill-wave" aria-hidden="true"></i
+          ></span>
+          <button id="filter-item-zone">Economique</button>
+        </li>
+        <li>
+          <span class="filter-icone"
+            ><i class="fas fa-child" aria-hidden="true"></i
+          ></span>
+          <button id="filter-item-zone">Familial</button>
+        </li>
+        <li>
+          <span class="filter-icone"
+            ><i class="fas fa-heart" aria-hidden="true"></i
+          ></span>
+          <button id="filter-item-zone">Romantique</button>
+        </li>
+        <li>
+          <span class="filter-icone"
+            ><i class="fas fa-dog" aria-hidden="true"></i
+          ></span>
+          <button id="filter-item-zone">Animaux autorisés</button>
+        </li>
+      </ul>
+    </section> 
+    <div id="information-container">
+        <span id="icon-info"><i class="fas fa-info" aria-hidden="true"></i></span> 
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-
-
-</body>
+  </body>
 </html>
