@@ -22,7 +22,7 @@
           </ul>
         </div>
       </nav>
-      <hr noshade /> 
+      <hr/>
       <div id="header-text">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -30,9 +30,9 @@
     </header>
     <div id="search-box">
         <span id="map-point"><i class="fas fa-map-marker-alt"></i></span>
-        <input
+        <input type="text"
         id="search-text"
-        type="text"
+        
         name=""
         placeholder="Marseille, France"
         />
@@ -48,25 +48,25 @@
           <span class="filter-icone"
             ><i class="fas fa-money-bill-wave" aria-hidden="true"></i
           ></span>
-          <button id="filter-item-zone">Economique</button>
+          <button class="filter-item-zone">Economique</button>
         </li>
         <li>
           <span class="filter-icone"
             ><i class="fas fa-child"></i
           ></span>
-          <button id="filter-item-zone">Familial</button>
+          <button class="filter-item-zone">Familial</button>
         </li>
         <li>
           <span class="filter-icone"
             ><i class="fas fa-heart"></i
           ></span>
-          <button id="filter-item-zone">Romantique</button>
+          <button class="filter-item-zone">Romantique</button>
         </li>
         <li>
           <span class="filter-icone"
             ><i class="fas fa-dog"></i
           ></span>
-          <button id="filter-item-zone">Animaux autorisés</button>
+          <button class="filter-item-zone">Animaux autorisés</button>
         </li>
       </ul>
       <div id="information-container">
@@ -124,8 +124,93 @@
         </figcaption>
       </figure>
     </aside>
-    <section id="accomodation">
-      <h3>Hébergements à Marseille</h3>
+    <section id="accomodation-container">
+      <h2>Hébergements à Marseille</h2>
+        <figure class="accomodation-image">
+          <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+          <figcaption>
+            <h3>Auberge la Cannebière</h3>
+            <p>Nuit à partir de 25 <span class="euro">€</span></p>
+            <div class="popular-rating">
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-disabled"><i class="fas fa-star"></i></span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="accomodation-image">
+          <img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+          <figcaption>
+            <h3>Hôtel du port</h3>
+            <p>Nuit à partir de 52 <span class="euro">€</span></p>
+            <div class="popular-rating">
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="accomodation-image">
+          <img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+          <figcaption>
+            <h3>Hôtel Les mouettes</h3>
+            <p>Nuit à partir de 76 <span class="euro">€</span></p>
+            <div class="popular-rating">
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-disabled"><i class="fas fa-star"></i></span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="accomodation-image">
+          <img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+          <figcaption>
+            <h3>Hôtel de la mer</h3>
+            <p>Nuit à partir de 46 <span class="euro">€</span></p>
+            <div class="popular-rating">
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-disabled"><i class="fas fa-star"></i></span>
+              <span class="popular-star-disabled"><i class="fas fa-star"></i></span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="accomodation-image">
+          <img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+          <figcaption>
+            <h3>Auberge Le Panier</h3>
+            <p>Nuit à partir de 23 <span class="euro">€</span></p>
+            <div class="popular-rating">
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-disabled"><i class="fas fa-star"></i></span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="accomodation-image">
+          <img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+          <figcaption>
+            <h3>Hôtel chez Amina</h3>
+            <p>Nuit à partir de 96 <span class="euro">€</span></p>
+            <div class="popular-rating">
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-activated"><i class="fas fa-star"></i></span>
+              <span class="popular-star-disabled"><i class="fas fa-star"></i></span>
+              <span class="popular-star-disabled"><i class="fas fa-star"></i></span>
+            </div>
+          </figcaption>
+        </figure>
+        <button id="button-more">Afficher plus</button>
     </section>
   </body>
 </html>
