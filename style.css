@@ -39,6 +39,7 @@ li{
 nav{
     margin-bottom: 1rem;
 }
+/* ### HEADER ### */
 #nav-bar  li
 {
     margin:0 27px;
@@ -284,6 +285,7 @@ figure p
     margin-bottom:25px;
     border-radius:12px;
     padding:10px;
+    box-shadow:10px 5px 5px gray;
 }
 .accomodation-image img
 {
@@ -301,4 +303,35 @@ figure p
     background-color: var(--main-grey);
     border:none;
     font-weight:bold;
+    font-size:20px;
+}
+/* ACTIVITY CONTAINER */
+#activity-container
+{
+    margin-top:30px;
+}
+#activity-container h2
+{
+    margin-bottom:25px;
+
+}
+.activity-image
+{
+    height:auto;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow: 12px 12px 2px 1px #ece7e7a1;
+}
+.activity-image img
+{
+    height:130px;
+    width:100%;
+    border-radius: 12px 12px 0 0;
+}
+.activity-image figcaption
+{
+    width:100%;
+    margin-top: 1rem;
+    padding-bottom:1rem;
+    padding-left:20px;
 }
