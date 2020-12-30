@@ -11,37 +11,27 @@
     <title>Reservia</title>
   </head>
   <body>
-    <header">
-      <nav>
-        <div id="nav-bar">
-          <ul id="nav-list">
-            <li><img src="img/logo/Reservia.svg" /></li>
-            <li><a id="inscription" href="#">S'inscrire</a></li>
-            <li><a id="accomodation" href="#">Hébergements</a></li>
-            <li><a id="activity" href="#">Activités</a></li>
-          </ul>
-        </div>
-      </nav>
-      <hr/>
-      <div id="header-text">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-      </div>
-    </header>
+    <header>
+      <a href="#"><img id="logo" src="img/logo/Reservia.svg" alt=""></a>
+      <navbar id="nav-bar">
+          <a id="accomodation" href="#">Hébergements</a>
+          <a id="activity" href="#">Activités</a>
+          <a id="inscription" href="#">S'inscrire</a>
+      </navbar>
+  </header>
+  <div id="header-text">
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre ville ou en pleine nature</p>
+  </div>
     <div id="search-box">
         <span id="map-point"><i class="fas fa-map-marker-alt"></i></span>
-        <input type="text"
-        id="search-text"
-        
-        name=""
-        placeholder="Marseille, France"
-        />
-        <input type="submit" id="btn-search-text" value="Rechercher" />
+        <input type="text" id="search-text" name="search-city" placeholder="Marseille, France"/>
+        <!-- <input type="submit" id="btn-search-text" value="search" /> -->
         <button id="search-btn" href="#">
-        <i class="fas fa-search"></i>
-    </button>
-     </div>
-     <section id="filter">
+          <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <section id="filter">
       <h3>Filtres</h3>
       <ul id="filter-list">
         <li>
@@ -253,5 +243,23 @@
         </figcaption>
       </figure>
     </section>
+    <footer>
+      <div id="about">
+        <h3>A propos</h3>
+        <a href="#">Fonctionnement du site</a>
+        <a href="#">Conditions génénrales de vente</a>
+        <a href="#">Données et confidentialité</a>
+      </div>
+      <div id="our-accomodations">
+        <h3>Nos hébergements</h3>
+        <a href="#">Charte qualité</a>
+        <a href="#">Soumettre votre hôtel</a>
+      </div>
+      <div id="assist">
+        <h3>Assistance</h3>
+        <a href="#">Centre d'aide</a>
+        <a href="#">Nous contacter</a>
+      </div>
+    </footer>
   </body>
 </html>
