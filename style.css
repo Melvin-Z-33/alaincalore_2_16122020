@@ -21,6 +21,10 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+h1{
+  font-size:1.6rem;
+}
+
 h2 {
   font-size: 1.25rem;
   padding-right: 20px;
@@ -66,8 +70,14 @@ navbar a {
   justify-content: flex-end;
   width: 100%;
   position: relative;
-  margin-top: 20px;
   flex-wrap: wrap-reverse;
+}
+
+#inscription {
+  position: relative;
+  bottom: 40px;
+  margin-right: 5%;
+  color: var(--main-blue);
 }
 
 #accomodation {
@@ -76,6 +86,7 @@ navbar a {
   border-bottom: solid 3px var(--main-blue);
   color: var(--main-blue);
   padding-bottom: 10px;
+  padding-left:19px;
   position: relative;
 }
 
@@ -84,41 +95,37 @@ navbar a {
   text-align: center;
   border-bottom: solid 3px var(--main-grey);
   padding-bottom: 10px;
+  padding-right:5px;
   position: relative;
-}
-
-#inscription {
-  position: relative;
-  bottom: 56px;
-  margin-right: 5%;
-  color: var(--main-blue);
 }
 
 #header-text {
   padding-left: var(--padding-left-mobile-section);
-  width: 99%;
+  margin-top:18px;
+  margin-bottom:10px;
 }
 
 #header-text p {
-  margin-top: 0.25rem;
-  /* font-size: 16px; */
+  margin-top: 0.7rem;
+  margin-bottom:2rem;
+  font-size: 17px;
 }
 
 #search-box {
   padding-left: var(--padding-left-mobile-section);
   margin-top: 20px;
-  margin-left: 16%;
+  margin-left: 3%;
   height: 40px;
   border-radius: 40px;
   
 }
 
 #map-point {
-  background-color: grey;
+  background-color: var(--main-grey);
   border-radius: 16% 0% 0% 16%;
   font-size: 25px;
   position: absolute;
-  width: 37px;
+  width: 40px;
   height:40px;
   text-align: center;
 }
@@ -135,9 +142,9 @@ navbar a {
   font-weight: bold;
   font-size: 16px;
   position: relative;
-  width: 237px;
+  width: 312px;
   height: 40px;;
-  padding-left: 41px;
+  padding-left: 50px;
   border-radius: 7px;
 }
 
@@ -153,15 +160,19 @@ navbar a {
   box-shadow: none;
 }
 
-#search-btn i {
-
-  /* width: 25px;
-  font-size: small;
-  margin: 0 auto; */
-}
-
 #btn-search-text {
   display: none;
+}
+
+/* ## FILTER ## */
+
+#filter{
+  margin-top:38px;
+}
+
+#filter h3{
+  margin-left:15px;
+  margin-bottom:-27px;
 }
 
 #filter-list {
@@ -180,6 +191,8 @@ navbar a {
 #filter-list li:nth-child(3) {
   margin-right: 50%;
 }
+
+
 
 .filter-icone {
   background-color: var(--main-blue-light);
@@ -206,6 +219,11 @@ navbar a {
   font-weight: bold;
   width: 155px;
   background-color: #fff;
+  margin-right:8px;
+}
+
+#animal{
+  width:200px;
 }
 
 #information-container {
@@ -217,8 +235,8 @@ navbar a {
 #icon-info {
   display: flex;
   height: 25px;
-  width: 25px;
-  border: solid 1px var(--main-blue);
+  width: 29px;
+  border: solid 1px var(--main-grey);
   border-radius: 50%;
 }
 
@@ -233,11 +251,12 @@ navbar a {
   word-spacing: 3px;
 }
 
-/* most-popular-section */
+/* ## MOST-POPULAR-SECTION ## */
 #most-popular {
-  margin-top: 50px;
+  margin-top: 27px;
   background-color: var(--main-grey);
   padding-left: var(--padding-left-mobile-section);
+  padding-bottom:6px;
 }
 
 #popular-header {
@@ -250,7 +269,7 @@ navbar a {
   margin-bottom: 20px;
   padding: 10px;
   display: flex;
-  background-color: gray;
+  background-color: #fff;
   width: 95%;
   height: 130px;
   border-radius: 12px;
@@ -258,9 +277,10 @@ navbar a {
 
 .popular-image img {
   margin-right: 25px;
-  width: 30%;
+  width:30%;
   height: auto;
   border-radius: 12px 0 0 12px;
+  object-fit:cover;
 }
 
 figure h3 {
@@ -285,26 +305,30 @@ figure p {
 
 /* ACCOMODATION CONTAINER */
 #accomodation-container {
-  background-color: var(--main-grey);
+  background-color: var(--main-white);
 }
 
 #accomodation-container h2 {
   margin-bottom: 25px;
+  padding-top: 20px;
 }
 
 .accomodation-image {
-  background-color: grey;
+  background-color: #fff;
+  width:97%;
   height: auto;
   margin-bottom: 25px;
   border-radius: 12px;
   padding: 10px;
   box-shadow: 10px 5px 5px gray;
+
 }
 
 .accomodation-image img {
   height: 130px;
   width: 100%;
   border-radius: 12px 12px 0 0;
+  object-fit: cover;
 }
 
 .accomodation-image figcaption {
@@ -312,8 +336,12 @@ figure p {
   width: 95%;
 }
 
+.accomodation-image p{
+  margin-bottom:10px;
+}
+
 #button-more {
-  background-color: var(--main-grey);
+  background-color: var(--main-white);
   border: none;
   font-weight: bold;
   font-size: 20px;
@@ -339,6 +367,7 @@ figure p {
   height: 130px;
   width: 100%;
   border-radius: 12px 12px 0 0;
+  object-fit:cover
 }
 
 .activity-image figcaption {
