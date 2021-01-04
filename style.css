@@ -12,9 +12,10 @@
 
 html {
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
-* {
+*, ::before, ::after {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -186,6 +187,12 @@ navbar a {
   position: relative;
   top: 25px;
   margin: 10px;
+}
+
+#filter-list li button:hover{
+  background-color: rgb(204, 168, 204);
+  font-size:1.03rem;
+  
 }
 
 #filter-list li:nth-child(3) {
@@ -409,3 +416,47 @@ footer div:nth-child(1) h3 {
 footer a {
   margin-bottom: 13px;
 }
+
+
+
+/* ### MEDIA QUERIES ### */
+
+
+@media screen and (orientation: landscape) {
+  #filter-list{
+   justify-content:space-around;
+   margin-left:10%
+  }
+  #filter-list li{
+    flex:2;
+  }
+  #filter-list li:nth-child(2) {
+    margin-right: 20%;
+}
+
+    #filter-list li:nth-child(3) {
+      margin-right: 20%;
+  }
+  #filter-list li:nth-child(4) {
+    left:-19%;
+}
+
+  footer{
+    flex-direction:row;
+  }
+  footer h3{
+    text-align: center;
+  }
+  footer a{
+    text-align:center;
+  }
+  footer div:nth-child(1) h3 {
+    margin-top: 30px;
+}
+
+
+/* @media (min-width: 768pxs) {
+  #info-list{
+    display 
+  }
+} */
