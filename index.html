@@ -5,19 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  
-  <title>Reservia</title>
+  <link rel="stylesheet" href="style2.css">
   <script src="https://kit.fontawesome.com/a79dbf0876.js" crossorigin="anonymous"></script>
+  <title>Reservia</title>
 </head>
 
 <body>
   <header>
+    <div id="test-header">
     <a href="#"><img id="logo" src="img/logo/Reservia.svg" alt=""></a>
     <navbar id="nav-bar">
       <a id="accomodation" href="#accomodation-container">Hébergements</a>
       <a id="activity" href="#activity-container">Activités</a>
       <a id="inscription" href="#">S'inscrire</a>
     </navbar>
+  </div>
     <div id="header-text">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
@@ -26,7 +28,7 @@
   <div id="search-box">
     <span id="map-point"><i class="fas fa-map-marker-alt"></i></span>
     <input type="text" id="search-text" name="search-city" placeholder="Marseille, France" />
-    <!-- <input type="submit" id="btn-search-text" value="search" /> -->
+    <button id="btn-search-text">Rechercher</button>
     <button id="search-btn" href="#">
       <i class="fas fa-search"></i>
     </button>
@@ -277,6 +279,7 @@
       <a href="#">Centre d'aide</a>
       <a href="#">Nous contacter</a>
     </div>
+    
   </footer>
 </body>
 

@@ -149,7 +149,7 @@ navbar a {
   border-radius: 7px;
 }
 
-#search-box button {
+#search-btn {
   color: white;
   width: 42px;
   height: 40px;
@@ -453,10 +453,277 @@ footer a {
   footer div:nth-child(1) h3 {
     margin-top: 30px;
 }
+}
 
+@media all  and (min-width:1100px){
 
-/* @media (min-width: 768pxs) {
-  #info-list{
-    display 
+/* #### HEADER QUERIES #### */
+  #test-header{
+    display:flex;
+    align-items: center;
+    padding-left:2%;
   }
+  #logo{
+    margin-left:1%;
+    margin-top:0;
+  }
+  #nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    bottom:18%;
+  }
+  #nav-bar a{
+  padding-right: 0px;
+    width:14%;
+}
+#accomodation{
+  border-bottom: none;
+  border-top: 2px solid var(--main-blue);
+  padding-top:2%;
+  display:inline-block;
+}
+#activity{
+  border-bottom: none;
+  padding-top:2%;
+}
+#inscription{
+  bottom:0%;
+    padding-top:2%;
+  width:13%;
+}
+
+#search-btn{
+  display:none;
+  
+}
+
+#btn-search-text {
+  display: block;
+  color: white;
+  width: 108px;
+  height: 40px;
+  border-radius: 0 10% 10% 0;
+  background: var(--main-blue);
+  border: solid 1px var(--main-blue);
+  position: absolute;
+  left:270px;
+  box-shadow: none;
+  top:167px;
+
+}
+
+#filter{
+  position: relative;
+}
+
+#filter #filter-list{
+  width:70%
+}
+#filter-list li{
+  margin:0;
+  
+}
+#filter-list li:nth-child(2) {
+  margin-right: 0;
+}
+  #information-container{
+    margin-top: 46px;
+    margin-bottom:15px;
+  }
+
+
+/* #### ACCOMODATION QUERIES ### */
+  #accomodation-container{
+    width:68%;
+    background-color: var(--main-grey);
+    margin-left:1%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+
+  #accomodation-container h2 {
+    margin-right: 51%;
+  }
+  #accomodation-container a{
+    width :32%;
+  }
+  #button-more {
+    background-color: var(--main-grey);
+  }
+
+  #most-popular{
+    width:25%;
+    float:right;
+    margin-right:2%;
+    margin-top:0;
+  }
+
+  .popular-image{
+    height:153px;
+    width:332px;
+  }
+
+  .popular-image img {
+    width: 37%;
+  }
+
+/* ### ACTIVITY QUERIES #### */
+
+.activity-image {
+	height: 99%;
+	margin-bottom: 25px;
+	border-radius: 12px;
+  box-shadow: 4px 3px 2px 1px #ece7e7a1;
+  border:1px solid var(--main-grey);
+}
+
+.activity-image figcaption {
+  margin-top:3%;
+ 
+}
+#activity-container{
+
+margin-top: 40px;
+margin-bottom:30px;
+width:100%;
+height:415px;
+display:flex;
+flex-wrap:wrap;
+flex-direction:column;
+}
+
+#activity-container a figure img{
+width:100%;
+height:86%;
+
+}
+
+
+#activity-container a:nth-child(2) {
+display:block;
+width:20%;
+height:100%;
+margin-right :10px;
+margin:2% 10px 0 -20%;
+
+}
+
+.activity-image img:nth-child(2) {
+height: 98%;
+}
+
+#activity-container a:nth-child(3) {
+display:block;
+width:20%;
+height:40%;
+margin-top:2%;
+margin-right :10px;
+margin-bottom:2%
+
+
+}
+.activity-image img:nth-child(3) {
+height: 30%;
+}
+
+
+#activity-container a:nth-child(4) {
+display:block;
+width:20%;
+height:40%;
+margin-right :10px;
+
+}
+
+.activity-image img:nth-child(4) {
+height: 20%;
+}
+
+#activity-container a:nth-child(5) {
+  display:block;
+  width:20%;
+  height:100%;
+ 
+  margin:2% -51px 0 -4%;
+  
+  }
+  
+  .activity-image img:nth-child(5) {
+  height: 98%;
+  }
+  
+  #activity-container a:nth-child(6) {
+  display:block;
+  width:20%;
+  height:40%;
+  margin-top:2%;
+  margin-right :10px;
+  margin-bottom:2%
+  
+  
+  }
+  .activity-image img:nth-child(6) {
+  height: 20%;
+  }
+  
+  #activity-container a:nth-child(7) {
+  display:block;
+  width:20%;
+  height:40%;
+  margin-right :10px;
+  
+  }
+  
+  .activity-image img:nth-child(7) {
+  height: 20%;
+  }
+
+
+/* 
+#activity-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#activity-container h2{
+  margin-right:85%;
+}
+
+#activity-container a{
+  width:221px;
+}
+
+#activity-container figure:nth-child(3){
+  flex-shrink: 2;
+  height:20px;
+  background-color: red;
+}
+#activity-container a:nth-child(4){
+  flex-shrink:4;
+  background-color: red;
+  align-self: flex-start;
+  height:50%;
+  display:inline-block;
+}
+#activity-container a:nth-child(4){
+  flex-shrink:1;
+  background-color: red;
+  align-self: flex-start;
+  height:50%;
+  display:inline-block;
 } */
+
+footer{
+  background-color: var(--main-grey);
+}
+  footer h3{
+    text-align:left;
+  }
+
+  footer a{
+    text-align:left
+  }
+}
