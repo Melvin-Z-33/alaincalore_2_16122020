@@ -7,7 +7,7 @@
   --main-white: #fff;
   --padding-mobile: 10px 10px;
   --padding-mobile-nav: 10px;
-  --padding-left-mobile-section: 0.5rem;
+  /* --padding-left-mobile-section: 0.5rem; */
 }
 
 html {
@@ -15,7 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
-*, ::before, ::after {
+body{
+  max-width: 1400px;
+}
+
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -53,52 +57,46 @@ li {
   list-style: none;
 }
 
-/* ### HEADER ### */
-navbar a {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
+/*************** HEADER *************/
 
-#logo {
-  height: 55px;
-  margin-top: 30px;
-  margin-left: 5%;
-}
-
-#nav-bar {
+nav ul {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   position: relative;
-  flex-wrap: wrap-reverse;
+  margin-top: 20px;
 }
 
-#inscription {
-  position: relative;
-  bottom: 40px;
+
+
+nav ul li:nth-child(1){
+    width: 50%;
+    text-align: center;
+   border-bottom: solid 3px var(--main-blue);
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+#accomodation{
+  color:var(--main-blue);
+}
+
+nav ul li:nth-child(2){
+
+    width: 50%;
+    text-align: center;
+   border-bottom: solid 3px #f2f2f2;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+nav ul li:nth-child(3){
+
+  position: absolute;
+  bottom: 56px;
   margin-right: 5%;
-  color: var(--main-blue);
+ font-size: 0.9rem;
 }
 
-#accomodation {
-  width: 50%;
-  text-align: center;
-  border-bottom: solid 3px var(--main-blue);
-  color: var(--main-blue);
-  padding-bottom: 10px;
-  padding-left:19px;
-  position: relative;
-}
-
-#activity {
-  width: 50%;
-  text-align: center;
-  border-bottom: solid 3px var(--main-grey);
-  padding-bottom: 10px;
-  padding-right:5px;
-  position: relative;
-}
 
 #header-text {
   padding-left: var(--padding-left-mobile-section);
@@ -118,7 +116,7 @@ navbar a {
   margin-left: 3%;
   height: 40px;
   border-radius: 40px;
-  
+  display:flex;
 }
 
 #map-point {
@@ -149,7 +147,7 @@ navbar a {
   border-radius: 7px;
 }
 
-#search-box button {
+#search-btn {
   color: white;
   width: 42px;
   height: 40px;
@@ -157,7 +155,7 @@ navbar a {
   background: var(--main-blue);
   border: solid 1px var(--main-blue);
   position: absolute;
-  left:292px;
+  left:311px;
   box-shadow: none;
 }
 
@@ -192,8 +190,9 @@ navbar a {
 #filter-list li button:hover{
   background-color: rgb(204, 168, 204);
   font-size:1.03rem;
-  
+
 }
+
 
 #filter-list li:nth-child(3) {
   margin-right: 50%;
@@ -258,7 +257,8 @@ navbar a {
   word-spacing: 3px;
 }
 
-/* ## MOST-POPULAR-SECTION ## */
+/******************** MOST POPULAR-SECTION ***********************/
+
 #most-popular {
   margin-top: 27px;
   background-color: var(--main-grey);
@@ -280,6 +280,7 @@ navbar a {
   width: 95%;
   height: 130px;
   border-radius: 12px;
+  margin-left:3%;
 }
 
 .popular-image img {
@@ -310,7 +311,7 @@ figure p {
   color: var(--main-grey);
 }
 
-/* ACCOMODATION CONTAINER */
+/************************* ACCOMODATION SECTION ************************************/
 #accomodation-container {
   background-color: var(--main-white);
 }
@@ -354,7 +355,7 @@ figure p {
   font-size: 20px;
 }
 
-/* ACTIVITY CONTAINER */
+/*******************************  ACTIVITY SECTION ******************************/
 #activity-container {
   margin-top: 30px;
 }
@@ -382,6 +383,10 @@ figure p {
   margin-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 20px;
+}
+
+#act-img-1{
+  height:50%;
 }
 
 /* ### FOOTER ### */
@@ -419,17 +424,25 @@ footer a {
 
 
 
-/* ### MEDIA QUERIES ### */
+/***************************** MEDIA QUERIES *********************************/
+
+
+@media all  and (min-width:432px){
+.accomodation-image img {
+  object-fit: initial;
+  object-position: unset;
+}
+}
 
 
 @media screen and (orientation: landscape) {
+
+
   #filter-list{
    justify-content:space-around;
    margin-left:10%
   }
-  #filter-list li{
-    flex:2;
-  }
+ 
   #filter-list li:nth-child(2) {
     margin-right: 20%;
 }
@@ -440,6 +453,7 @@ footer a {
   #filter-list li:nth-child(4) {
     left:-19%;
 }
+
 
   footer{
     flex-direction:row;
@@ -453,10 +467,259 @@ footer a {
   footer div:nth-child(1) h3 {
     margin-top: 30px;
 }
+}
 
-
-/* @media (min-width: 768pxs) {
-  #info-list{
-    display 
+@media all  and (min-width:663px){
+  #filter-list{
+      justify-content: flex-start;
   }
-} */
+  #filter-list li:nth-child(2),#filter-list li:nth-child(3) {
+    margin-right: 0%;
+}
+#filter-list li:nth-child(4) {
+  left: 0%;
+}
+
+}
+
+@media all  and (min-width:1100px){
+
+/********************* HEADER QUERIES *****************************/
+  body{
+    padding:0 1%;
+  }
+
+#logo{
+  margin:0;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  flex-wrap: nowrap;
+  align-items: center;
+  height:55px;
+ 
+}
+nav ul {
+    display: flex;
+    margin-top:0;
+    width: 100%;
+    position: relative;
+
+}
+
+
+nav li {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  height: 55px;
+  align-items: center;
+  margin: 0 10px;
+} 
+
+nav ul li:nth-child(1) {
+  width:8%;
+  padding-bottom: 0px;
+  border-bottom:none;
+  border-top: 3px solid var(--main-blue);
+}
+
+nav ul li:nth-child(2) {
+  width:8%;
+  padding-bottom: 0px;
+  border-bottom:none;
+}
+
+nav ul li:nth-child(3) {
+  width:8%;
+  position:relative;
+  bottom:0px;
+  margin-right:0%;
+}
+
+#accomodation{
+  border-bottom:none;
+  padding-bottom:0px;
+  width:0px;
+}
+
+#activity{
+  border:none;
+  padding-bottom:0px;
+}
+#inscription{
+  bottom:0;
+}
+
+#search-btn{
+  display:none;
+}
+
+#btn-search-text {
+  display: block;
+  color: white;
+  width: 108px;
+  height: 40px;
+  border-radius: 0 10% 10% 0;
+  background: var(--main-blue);
+  border: solid 1px var(--main-blue);
+  position: absolute;
+  left:270px;
+  box-shadow: none;
+
+}
+
+#filter{
+  position: relative;
+}
+
+#filter-flex{
+  display:flex;
+  align-items: center;
+}
+
+#filter-list{
+  width:73%;
+  margin-left:3%;
+}
+#filter-list li{
+  margin:0;
+  top:0
+
+}
+#filter-list li:nth-child(2) {
+  margin-right: 0;
+}
+  #information-container{
+    margin-top: 46px;
+    margin-bottom:15px;
+  }
+
+  #filter h3{
+    margin-bottom:0;
+  }
+
+  #informtion-container{
+    display:flex;
+    align-items: baseline;
+    height:21px;
+  }
+
+/************* ACCOMODATION  SECTION RESPONSIVE *************************/
+
+  #accomodation-container{
+    width:68%;
+    background-color: var(--main-grey);
+    margin-left:1%; 
+  }
+
+  #accomodation-container h2 {
+    margin-right: 51%;
+  }
+
+  #accomodation-container-flex{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  #accomodation-container a{
+    width :30%;
+  }
+  #button-more {
+    background-color: var(--main-grey);
+  }
+
+  #most-popular{
+    width:26%;
+    float:right;
+    margin-right:1%;
+    margin-top:0;
+    padding-left:1%;
+  }
+
+  .popular-image{
+    height:153px;
+    width:332px;
+    margin-left:0%;
+  }
+
+  .popular-image img {
+    width: 37%;
+  }
+
+
+  #accomodation-container{
+    width:70%;
+  }
+/******************** ACTIVITY SECTION QUERIES ****************************/
+
+.activity-image {
+
+  margin-bottom: 0px;
+  box-shadow: 3px 3px 2px 2px #ece7e7a1;
+
+}
+#activity-container{
+
+margin-top: 40px;
+margin-bottom:30px;
+width:100%;
+}
+
+#activity-container-flex{
+  display:flex;
+  justify-content: space-around;
+  align-items: stretch;
+  height:400px;
+
+}
+
+#activity-container-flex div{
+  width:20%;
+}
+
+#activity-item-1, #activity-item-3  {
+  align-self:stretch;
+  height:100%;
+}
+
+#activity-item-1 a .activity-image, #activity-item-3 a .activity-image {
+  height:100%;
+  display:block;
+}
+
+#activity-item-1 a .activity-image img, #activity-item-3 a .activity-image img{
+  height: 82%;
+}
+#activity-item-2 a .activity-image{
+  margin-bottom:2px
+}
+
+#activity-item-2, #activity-item-4{
+
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/********************** FOOTER  SECTION QUERIES *******************************/
+
+footer{
+  background-color: var(--main-grey);
+}
+  footer h3{
+    text-align:left;
+  }
+
+  footer a{
+    text-align:left
+  }
+}
+
