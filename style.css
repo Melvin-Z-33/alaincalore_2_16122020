@@ -59,7 +59,43 @@ li {
 
 /*************** HEADER *************/
 
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
 
+
+
+nav ul li:nth-child(1){
+    width: 50%;
+    text-align: center;
+   border-bottom: solid 3px var(--main-blue);
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+#accomodation{
+  color:var(--main-blue);
+}
+
+nav ul li:nth-child(2){
+
+    width: 50%;
+    text-align: center;
+   border-bottom: solid 3px #f2f2f2;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+nav ul li:nth-child(3){
+
+  position: absolute;
+  bottom: 56px;
+  margin-right: 5%;
+ font-size: 0.9rem;
+}
 
 
 #header-text {
@@ -244,6 +280,7 @@ li {
   width: 95%;
   height: 130px;
   border-radius: 12px;
+  margin-left:3%;
 }
 
 .popular-image img {
@@ -390,6 +427,14 @@ footer a {
 /***************************** MEDIA QUERIES *********************************/
 
 
+@media all  and (min-width:432px){
+.accomodation-image img {
+  object-fit: initial;
+  object-position: unset;
+}
+}
+
+
 @media screen and (orientation: landscape) {
 
 
@@ -409,6 +454,7 @@ footer a {
     left:-19%;
 }
 
+
   footer{
     flex-direction:row;
   }
@@ -423,36 +469,47 @@ footer a {
 }
 }
 
+@media all  and (min-width:663px){
+  #filter-list{
+      justify-content: flex-start;
+  }
+  #filter-list li:nth-child(2),#filter-list li:nth-child(3) {
+    margin-right: 0%;
+}
+#filter-list li:nth-child(4) {
+  left: 0%;
+}
+
+}
+
 @media all  and (min-width:1100px){
 
-/* #### HEADER QUERIES #### */
+/********************* HEADER QUERIES *****************************/
   body{
     padding:0 1%;
   }
-#test-header{
-  display:flex;
-  align-items: center;
-}
+
 #logo{
   margin:0;
 }
 
 
-
-
-
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   position: relative;
-  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap;
   align-items: center;
   height:55px;
  
 }
-nav ol {
+nav ul {
     display: flex;
+    margin-top:0;
+    width: 100%;
+    position: relative;
+
 }
 
 
@@ -465,15 +522,31 @@ nav li {
   margin: 0 10px;
 } 
 
-nav li:nth-child(1){
-  border-top:  3px solid var(--main-blue);
+nav ul li:nth-child(1) {
+  width:8%;
+  padding-bottom: 0px;
+  border-bottom:none;
+  border-top: 3px solid var(--main-blue);
+}
+
+nav ul li:nth-child(2) {
+  width:8%;
+  padding-bottom: 0px;
+  border-bottom:none;
+}
+
+nav ul li:nth-child(3) {
+  width:8%;
+  position:relative;
+  bottom:0px;
+  margin-right:0%;
 }
 
 #accomodation{
   border-bottom:none;
   padding-bottom:0px;
+  width:0px;
 }
-
 
 #activity{
   border:none;
@@ -481,11 +554,10 @@ nav li:nth-child(1){
 }
 #inscription{
   bottom:0;
-  
 }
+
 #search-btn{
   display:none;
-  
 }
 
 #btn-search-text {
@@ -573,6 +645,7 @@ nav li:nth-child(1){
   .popular-image{
     height:153px;
     width:332px;
+    margin-left:0%;
   }
 
   .popular-image img {
@@ -581,7 +654,7 @@ nav li:nth-child(1){
 
 
   #accomodation-container{
-    width:70%¨;
+    width:70%;
   }
 /******************** ACTIVITY SECTION QUERIES ****************************/
 
@@ -628,7 +701,7 @@ width:100%;
 }
 
 #activity-item-2, #activity-item-4{
-  
+
     height: 400px;
     display: flex;
     flex-direction: column;
