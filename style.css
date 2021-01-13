@@ -8,6 +8,7 @@
   --padding-mobile: 10px 10px;
   --padding-mobile-nav: 10px;
   /* --padding-left-mobile-section: 0.5rem; */
+  --desktop-padding-left:1%;
 }
 
 html {
@@ -34,10 +35,6 @@ h2 {
   font-size: 1.25rem;
   padding-right: 20px;
   font-weight: 800;
-}
-
-section {
-  padding-left: var(--padding-left-mobile-section);
 }
 
 a {
@@ -67,7 +64,9 @@ nav ul {
   margin-top: 20px;
 }
 
-
+nav a:nth-child(1) {
+  padding-left: 4%;
+}
 
 nav ul li:nth-child(1) {
   width: 50%;
@@ -77,8 +76,10 @@ nav ul li:nth-child(1) {
   font-size: 0.9rem;
 }
 
-#accomodation {
+#accomodation,
+#inscription {
   color: var(--main-blue);
+  font-weight: bold;
 }
 
 nav ul li:nth-child(2) {
@@ -96,23 +97,26 @@ nav ul li:nth-child(3) {
   font-size: 0.9rem;
 }
 
-
 #header-text {
-  padding-left: var(--padding-left-mobile-section);
+  padding-left: 4%;
   margin-top: 18px;
   margin-bottom: 10px;
+  padding-right: 15%;
+}
+
+#header-text h1 {
+  font-size: 1.5em;
 }
 
 #header-text p {
   margin-top: 0.7rem;
   margin-bottom: 2rem;
-  font-size: 17px;
+  font-size: 1.1em;
 }
 
 #search-box {
-  padding-left: var(--padding-left-mobile-section);
   margin-top: 20px;
-  margin-left: 3%;
+  padding-left: 4%;
   height: 40px;
   border-radius: 40px;
   display: flex;
@@ -125,7 +129,9 @@ nav ul li:nth-child(3) {
   position: absolute;
   width: 40px;
   height: 40px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #map-point i {
@@ -142,7 +148,6 @@ nav ul li:nth-child(3) {
   position: relative;
   width: 312px;
   height: 40px;
-  ;
   padding-left: 50px;
   border-radius: 7px;
 }
@@ -165,13 +170,16 @@ nav ul li:nth-child(3) {
 
 /* ## FILTER ## */
 
-#filter {
-  margin-top: 38px;
+#filter-flex {
+  margin-top: 7%;
+  padding-left: 4%;
+  display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
 }
 
-#filter h3 {
-  margin-left: 15px;
-  margin-bottom: -27px;
+#filter-flex h3 {
+  margin-bottom: -6%;
 }
 
 #filter-list {
@@ -184,7 +192,8 @@ nav ul li:nth-child(3) {
   display: flex;
   position: relative;
   top: 25px;
-  margin: 10px;
+  margin: 8px;
+  cursor: pointer;
 }
 
 #filter-list li button:hover {
@@ -193,18 +202,14 @@ nav ul li:nth-child(3) {
 }
 
 
-#filter-list li:nth-child(3) {
-  margin-right: 50%;
-}
-
-
-
 .filter-icone {
   background-color: var(--main-blue-light);
   height: 50px;
   width: 50px;
   border-radius: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: -5px;
 }
@@ -212,8 +217,6 @@ nav ul li:nth-child(3) {
 .filter-icone i {
   color: var(--main-blue);
   position: absolute;
-  top: 31%;
-  left: 37%;
 }
 
 .filter-item-zone {
@@ -221,10 +224,15 @@ nav ul li:nth-child(3) {
   border: solid 1px var(--main-blue-light);
   border-radius: 20px;
   padding-left: 56px;
+  padding-right:15px;
   font-weight: bold;
-  width: 155px;
+  width: 150px;
   background-color: #fff;
   margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 #animal {
@@ -365,7 +373,10 @@ figure p {
   margin: 0 auto;
 }
 
-#activity-item-1, #activity-item-2, #activity-item-3, #activity-item-4{
+#activity-item-1,
+#activity-item-2,
+#activity-item-3,
+#activity-item-4 {
   width: 90%;
   margin: auto;
 }
@@ -386,7 +397,7 @@ figure p {
   height: 130px;
   width: 100%;
   border-radius: 12px 12px 0 0;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .activity-image figcaption {
@@ -433,25 +444,23 @@ footer a {
   margin-bottom: 13px;
 }
 
-
-
 /***************************** MEDIA QUERIES *********************************/
 
-
-@media all and (min-width:432px) {
+@media all and (min-width: 432px) {
   .accomodation-image img {
     object-fit: initial;
     object-position: unset;
   }
+  #information-container{
+    display:flex;
+    align-items:center;
+  }
 }
 
-
 @media screen and (orientation: landscape) {
-
-
   #filter-list {
     justify-content: space-around;
-    margin-left: 10%
+    margin-left: 10%;
   }
 
   #filter-list li:nth-child(2) {
@@ -483,7 +492,7 @@ footer a {
   }
 }
 
-@media all and (min-width:663px) {
+@media all and (min-width: 663px) {
   #filter-list {
     justify-content: flex-start;
   }
@@ -496,11 +505,9 @@ footer a {
   #filter-list li:nth-child(4) {
     left: 0%;
   }
-
 }
 
-
-@media all and (min-width:759px) {
+@media all and (min-width: 759px) {
   #accomodation-container-flex {
     display: flex;
     justify-content: center;
@@ -513,13 +520,13 @@ footer a {
   }
 }
 
-
-@media all and (min-width:1212px) {
+@media all and (min-width: 1212px) {
 
   /********************* HEADER QUERIES *****************************/
   body {
     padding: 0 1%;
     width: 100%;
+    margin: auto;
   }
 
   #logo {
@@ -534,7 +541,12 @@ footer a {
     flex-wrap: nowrap;
     align-items: center;
     height: 55px;
+    padding-top: 2%;
+  }
 
+  #test-header nav a:nth-child(1){
+    padding-left: var(--desktop-padding-left);
+  
   }
 
   nav ul {
@@ -542,20 +554,20 @@ footer a {
     margin-top: 0;
     width: 100%;
     position: relative;
-
   }
 
   nav li {
     list-style: none;
     display: flex;
     padding: 0px;
-    height: 55px;
+    height: 82px;
+    width:100px;
     align-items: center;
-    margin: 0 10px;
+    margin: 0;
   }
 
   nav ul li:nth-child(1) {
-    margin-right:0;
+    margin-right: 0;
     width: 95px;
     padding-bottom: 0px;
     border-bottom: none;
@@ -566,33 +578,49 @@ footer a {
     width: 95px;
     padding-bottom: 0px;
     border-bottom: none;
-    padding-left:2%;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 
   }
 
   nav ul li:nth-child(3) {
     width: 95px;
     position: relative;
     bottom: 0px;
-    margin-right: 0%;
-    padding-left:2%;
-    margin-left:-2%;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
   }
 
   #accomodation {
     border-bottom: none;
     padding-bottom: 0px;
     width: 0px;
+    padding-left:0%;
   }
 
   #activity {
     border: none;
     padding-bottom: 0px;
+    padding-left:0%;
   }
 
   #inscription {
     bottom: 0;
-    color:var(--main-blue);
+    color: var(--main-blue);
     font-weight: bold;
+    padding-left:0%;
+  }
+
+  #header-text {
+    margin-left: 0%;
+  }
+
+  #search-box {
+    justify-content: left;
+    margin-left: 0%;
+    margin-bottom: 2%;
   }
 
   #search-btn {
@@ -608,9 +636,8 @@ footer a {
     background: var(--main-blue);
     border: solid 1px var(--main-blue);
     position: absolute;
-    left: 270px;
+    left: 19%;
     box-shadow: none;
-
   }
 
   #filter {
@@ -620,6 +647,11 @@ footer a {
   #filter-flex {
     display: flex;
     align-items: center;
+    padding-left:var( --desktop-padding-left);
+  }
+
+  #filter-flex h3{
+    margin-bottom: 0%;
   }
 
   #filter-list {
@@ -627,9 +659,10 @@ footer a {
     margin-left: 3%;
   }
 
-  #filter-list li {
+  #filter-flex #filter-list li {
     margin: 0;
-    top: 0
+    margin-right: 10px;
+    top: 0;
   }
 
   #filter-list li:nth-child(2) {
@@ -645,10 +678,21 @@ footer a {
     margin-bottom: 0;
   }
 
-  #informtion-container {
+  #information-container {
     display: flex;
     align-items: baseline;
     height: 21px;
+    padding-left:var( --desktop-padding-left);
+  }
+
+
+  #main{
+    margin-top:30px;
+  }
+
+  /****************** MOST POPULAR SECTION RESPONSIVE  ********************/
+  #most-popular {
+    border-radius: 2%;
   }
 
   /************* ACCOMODATION  SECTION RESPONSIVE *************************/
@@ -657,6 +701,7 @@ footer a {
     width: 68%;
     background-color: var(--main-grey);
     margin-left: 1%;
+    border-radius: 2%;
   }
 
   #accomodation-container h2 {
@@ -674,12 +719,15 @@ footer a {
     width: 30%;
   }
 
+  .accomodation-image {
+    width: 100%;
+  }
+
   #button-more {
     background-color: var(--main-grey);
     padding-left: 0%;
     margin-left: 2%;
   }
-
 
   #most-popular {
     width: 26%;
@@ -706,14 +754,11 @@ footer a {
   /******************** ACTIVITY SECTION QUERIES ****************************/
 
   .activity-image {
-
     margin-bottom: 0px;
     box-shadow: 3px 3px 2px 2px #ece7e7a1;
-
   }
 
   #activity-container {
-
     margin-top: 40px;
     margin-bottom: 30px;
     width: 100%;
@@ -724,7 +769,6 @@ footer a {
     justify-content: space-around;
     align-items: stretch;
     height: 400px;
-
   }
 
   #activity-container-flex div {
@@ -735,7 +779,6 @@ footer a {
   #activity-item-3 {
     align-self: stretch;
     height: 100%;
-
   }
 
   #activity-item-1 a .activity-image,
@@ -750,18 +793,16 @@ footer a {
   }
 
   #activity-item-2 a .activity-image {
-    margin-bottom: 2px
+    margin-bottom: 2px;
   }
 
   #activity-item-2,
   #activity-item-4 {
-
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-
 
   /********************** FOOTER  SECTION QUERIES *******************************/
 
@@ -774,7 +815,6 @@ footer a {
   }
 
   footer a {
-    text-align: left
+    text-align: left;
   }
-
 }
