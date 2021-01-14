@@ -276,7 +276,7 @@ flex-wrap: wrap;
 #popular-header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 10px 20px 10px;
+  padding: 30px 5% 20px 5%;
 }
 
 .popular-image {
@@ -305,7 +305,9 @@ figure h3 {
 figure p {
   margin-bottom: 30px;
 }
-
+#graphic{
+font-size: larger;
+}
 .euro {
   font-weight: bold;
 }
@@ -324,8 +326,10 @@ figure p {
 }
 
 #accomodation-container h2 {
+
   margin-bottom: 25px;
   padding-top: 20px;
+  padding-left:7%
 }
 
 .accomodation-image {
@@ -518,7 +522,15 @@ footer a {
     width: 40%;
     margin: 0 10px;
   }
-}
+
+  #graphic{
+    font-size: x-large;
+  }
+
+  #popular-header{
+    padding:17px 4% 27px;
+  }
+
 
 @media all and (min-width: 1212px) {
 
@@ -580,7 +592,7 @@ footer a {
     border-bottom: none;
     display: flex;
     justify-content: center;
-    margin: 0 10px 
+    margin: 0 50px 
   }
 
   nav ul li:nth-child(3) {
@@ -615,6 +627,7 @@ footer a {
 
   #header-text {
     margin-left: 0%;
+    padding-left:var(--desktop-padding-left);
   }
 
   #search-box {
@@ -695,28 +708,34 @@ footer a {
     border-radius: 2%;
   }
 
+  #graphic{
+        margin-right:6%;
+  }
+
   /************* ACCOMODATION  SECTION RESPONSIVE *************************/
 
   #accomodation-container {
-    width: 68%;
+    width: 70%;
     background-color: var(--main-grey);
-    margin-left: 1%;
+    margin-left: 1.25%;
     border-radius: 2%;
+    padding-bottom:2%;
   }
 
   #accomodation-container h2 {
     margin-right: 51%;
-    margin-left: 2%;
+    padding-left: 5%
+
   }
 
   #accomodation-container-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   #accomodation-container a {
-    width: 30%;
+    width: 26%;
   }
 
   .accomodation-image {
@@ -725,9 +744,12 @@ footer a {
 
   #button-more {
     background-color: var(--main-grey);
-    padding-left: 0%;
-    margin-left: 2%;
+    padding-left: 6%;
+    margin-left: 0%;
+    margin-top:2%;
   }
+
+/******************   MOST POPULAR SECTION RESPONSIVE   ********************/
 
   #most-popular {
     width: 26%;
@@ -738,7 +760,7 @@ footer a {
   }
 
   .popular-image {
-    height: 153px;
+    height: 161px;
     width: 92%;
     margin-left: 0%;
   }
@@ -747,9 +769,14 @@ footer a {
     width: 37%;
   }
 
-  #accomodation-container {
-    width: 70%;
+  .popular-image figcaption{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   }
+ 
 
   /******************** ACTIVITY SECTION QUERIES ****************************/
 
@@ -758,10 +785,27 @@ footer a {
     box-shadow: 3px 3px 2px 2px #ece7e7a1;
   }
 
+  .activity-image figcaption{
+    margin:0;
+    padding-left:5%;
+    
+    display: flex;
+    align-items:center;
+    
+  }
+
+  figure h3{
+    margin-bottom:0px;
+  }
+
   #activity-container {
     margin-top: 40px;
     margin-bottom: 30px;
     width: 100%;
+  }
+
+  #activity-container h2{
+    padding-left: 1.22%;
   }
 
   #activity-container-flex {
@@ -769,10 +813,11 @@ footer a {
     justify-content: space-around;
     align-items: stretch;
     height: 400px;
+
   }
 
   #activity-container-flex div {
-    width: 20%;
+    width: 23%;
   }
 
   #activity-item-1,
@@ -789,11 +834,12 @@ footer a {
 
   #activity-item-1 a .activity-image img,
   #activity-item-3 a .activity-image img {
-    height: 82%;
+    height: 87%;
+    object-fit: none;
   }
 
-  #activity-item-2 a .activity-image {
-    margin-bottom: 2px;
+  #act-img-1 figcaption , #act-img-2 figcaption{
+  height:14%;
   }
 
   #activity-item-2,
@@ -803,6 +849,69 @@ footer a {
     flex-direction: column;
     justify-content: space-between;
   }
+
+
+  /* ACTIVUTY ITEMS 2  1st ELEMENT */
+
+  #activity-item-2 a .activity-image {
+    margin-bottom: 2px;
+  }
+
+/* #activity-items-2 a:nth-child(2), #activity-items-{
+  height: 50%;
+width: 95%;
+border: 1px solid var(--main-grey);
+border-radius: 3%;
+}  */
+
+#activity-link-01, #activity-link-04{
+  height:53%;
+  display:block;
+}
+#activity01, #activity04{
+  height:100%;
+}
+
+#activity01 img, #activity04 img{
+  height:
+   151px
+}
+
+#activity01  figcaption, #activity04 figcaption{
+display:flex;
+align-items: center;
+height:32%;
+}
+
+
+/* ACTIVITY 2  */
+#activity-link-02, #activity-link03{
+
+    height: 38%;
+    border: 1px solid gray;
+    border-radius: 7%;
+}
+
+
+#activity02, #activity03{
+
+    height: 100%;
+    border: 1px solid var(--main-grey);
+}
+
+#activity02 figcaption, #activity03 figcaption{
+  display: flex;
+align-items: center;
+height:40%;
+}
+
+#activity02 img, #activity03 img{
+  height:108px;
+}
+
+#activity02 h3, #activity03 h3{
+  margin-bottom:10px;
+}
 
   /********************** FOOTER  SECTION QUERIES *******************************/
 
