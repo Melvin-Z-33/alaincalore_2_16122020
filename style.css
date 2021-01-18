@@ -536,7 +536,7 @@ footer a {
   #activity-item-2,
   #activity-item-3,
   #activity-item-4 {
-    width: 50%;
+    width: 40%;
     margin: auto;
   }
 }
@@ -567,8 +567,23 @@ footer a {
 @media all and (min-width:960px) {
   footer div {
     padding-left: 5%;
-
   }
+
+  .activity-image img {
+    object-fit: cover;
+  }
+    /* .accomodation-image {
+      width:79%;
+    }
+  
+  .accomodation-image img {
+    object-fit: inherit ;
+    height:150px
+  }
+
+  #activity01 img{
+    object-fit: cover;
+  } */
 }
 
 
